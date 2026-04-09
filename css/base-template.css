@@ -53,6 +53,10 @@ body {
 .el-menu--horizontal {
     background-color: transparent !important;
     border-bottom: none !important;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .el-menu--horizontal .el-menu-item {
@@ -61,6 +65,11 @@ body {
     border-bottom: none !important;
     height: 64px;
     line-height: 64px;
+    padding: 0 20px;
+    cursor: pointer;
+    list-style: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
 }
 
 .el-menu--horizontal .el-menu-item:hover {
@@ -149,23 +158,46 @@ body {
     white-space: nowrap;
 }
 
+.base-body {
+    display: flex;
+    height: calc(100vh - 64px);
+}
+
 .base-aside {
     background-color: #fff;
     border-right: 1px solid #e4e7ed;
     overflow: hidden;
+    width: 200px;
+    flex-shrink: 0;
 }
 
 .aside-menu {
     border-right: none !important;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.aside-menu .el-menu-item.is-active {
-    background-color: #ecf5ff !important;
-    color: #2B60DD !important;
+.aside-menu .aside-menu-item {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #606266;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
 }
 
-.aside-menu .el-menu-item:hover {
-    background-color: #f5f7fa !important;
+.aside-menu .aside-menu-item:hover {
+    background-color: #f5f7fa;
+}
+
+.aside-menu .aside-menu-item.is-active {
+    background-color: #ecf5ff;
+    color: #2B60DD;
 }
 
 .base-main {
