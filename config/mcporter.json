@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "edgeone-pages-mcp-server": {
+      "baseUrl": "https://mcp-on-edge.edgeone.site/mcp-server"
+    }
+  }
+}
